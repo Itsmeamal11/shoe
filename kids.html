@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script> <!--  -->
+<!-- font-awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!--  -->
+<!-- googlefonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+    <!--FONT AWESOME-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!--GOOGLE FONTS-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet"> 
+    <style>
+        body {
+            font-family: "Lora", serif;
+            background-color: black;
+        }
+
+        img {
+            height: 300px;
+            width: 80px;
+
+        }
+
+        .colum-1 {
+            height: 200px;
+        }
+
+        .card-img-top {
+            border-radius: 5px;
+        }
+
+        .images-1 {
+            width: 350px;
+        }
+
+        h1 {
+            color: white;
+        }
+
+        h2 {
+            color: white;
+        }
+
+        h3 {
+            color: white;
+
+        }
+
+        .animation-1 :hover {
+            transform: scale(1.05);
+            transition: 0.10s ease;
+            color: green;
+            background-color: black;
+        }
+
+        .btn {
+            color: white;
+            background-color: black;
+        }
+
+        .card-text:hover {
+            color: red;
+
+        }
+
+        /* Custom CSS to style the background image */
+        .wild-image-section {
+            background-image: url("https://img.freepik.com/premium-photo/banner-footwear-kids-junior-sport-sneakers-generative-ai_681945-28432.jpg?semt=ais_hybrid");
+            /* Wild-themed image */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            /* Full screen height */
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 400px;
+        }
+
+        .wild-image-section h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .wild-image-section p {
+            font-size: 1.25rem;
+        }
+
+        .add-1 {
+            color: black;
+        }
+        .footer{
+    background:#000;
+    padding:30px 0px;
+    font-family: 'Play', sans-serif;
+    text-align:center;
+    }
+    
+    .footer .row{
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:gray;
+    font-size:0.8em;
+    }
+    
+    .footer .row a{
+    text-decoration:none;
+    color:gray;
+    transition:0.5s;
+    }
+    
+    .footer .row a:hover{
+    color:#fff;
+    }
+    
+    .footer .row ul{
+    width:100%;
+    }
+    
+    .footer .row ul li{
+    display:inline-block;
+    margin:0px 30px;
+    }
+    
+    .footer .row a i{
+    font-size:2em;
+    margin:0% 1%;
+    }
+    
+    @media (max-width:720px){
+    .footer{
+    text-align:left;
+    padding:5%;
+    }
+    .footer .row ul li{
+    display:block;
+    margin:10px 0px;
+    text-align:left;
+    }
+    .footer .row a i{
+    margin:0% 3%;
+    }
+    }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light d-flex   ">
+        <div id="nav" class="container-fluid row-xs-1 border-bottom">
+            <a class="navbar-brand ms-xs-1 ms-5 fw-bold" href="index.html">cloudFOOT</a>
+            <div id="menu" class="d-flex justify-content-evenly flex-row  me-5">
+              
+                <!-- dropdown -->
+                
+                   
+                </li>
+                <!--  -->
+            <!--  -->
+            <a style="text-decoration: none;" href="index.html"><li class=" me-2">HOME</li></a>
+            <a style="text-decoration: none;" href="men.html"><li class=" me-2">MEN</li></a>
+            <a style="text-decoration: none;" href="women.html"><li class=" me-2">WOMEN</li></a>
+            <a style="text-decoration: none;" href="kids.html"><li class=" me-2">KIDS</li></a>
+            <a style="text-decoration: none;" href="about.html"><li class=" me-2">ABOUT US</li></a>
+            <a style="text-decoration: none;" href="kartmain.html"><li><i class="fa-solid fa-cart-shopping"></i></li></a>
+            </div>
+          <button id="menuicon" class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+              aria-labelledby="offcanvasDarkNavbarLabel">
+              <div class="offcanvas-header">
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                      aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                  <ul class="navbar-nav text-light justify-content-end flex-grow-1 pe-3">
+                      <li class="nav-item">
+                          <a class="nav-link active text-light" aria-current="page" href="index.html">HOME</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link text-light" href="men.html">MEN</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link text-light" href="women.html">WOMEN</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link text-light" href="kids.html">KIDS</a>
+                      </li>
+                  </ul>
+                  <form class="d-flex mt-3" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-dark bg-black border-white" type="submit">Search</button>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </nav>
+    
+    <section class="wild-image-section">
+        <div class="container add-1">
+            <h1 class="add-1">Add reflectivity to every step</h1>
+            <p>move from feeling visible to vibrant and move your mind with shoes</p>
+            <a href="kartmain.html" class="btn btn-light btn-lg">Shop Now</a>
+        </div>
+    </section>
+    <div class="text-center">
+        <h2>KIDS SHOES</h2>
+    </div>
+    <!-- Product Grid -->
+    <div class="container-fluid my-5">
+        <div class="row">
+            <!-- Product 1 -->
+            <div class="col-md-3  img-circle animation-1 ">
+                <div class="card product-card">
+                    <img src="https://cdn.khadims.com/image/tr:e-sharpen-01,h-822,w-940,cm-pad_resize/catalog/khadims/product/47318347390/47318347390_7.jpg"
+                        class="card-img-top" alt="Product 1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-center">Blue Casual Sports Shoe Sneakers for Kids "</h5>
+                        <p class="card-text text-center">$99.99</p>
+                        <a href="kartmain.html" class="btn btn-dark ">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class=" col-md-3 animation-1">
+                <div class="card product-card">
+                    <img src="https://cdn.khadims.com/image/tr:e-sharpen-01,h-700,w-800,cm-pad_resize/catalog/khadims/product/98713698793/98713698793_1.jpg"
+                        class="card-img-top" alt="Product 2">
+                    <div class="card-body  text-center">
+                        <h5 class="card-title"> Blue Soft Fabric Baby Booties for Kids - 1-3 yrs</h5>
+                        <p class="card-text">$149.99</p>
+                        <a href="kartmain.html" class="btn btn-dark">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="col-md-3 animation-1 ">
+                <div class="card product-card">
+                    <img src="https://m.media-amazon.com/images/I/71xlufSN66L._SY695_.jpg" class="card-img-top  "
+                        alt="Product 3">
+                    <div class="card-body  text-center">
+                        <h5 class="card-title">Fashiol Fashionable Winter Fleece Shoes </h5>
+                        <p class="card-text">$79.99</p>
+                        <a href="kartmain.html" class="btn btn-dark">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="col-md-3 animation-1 ">
+                <div class="card product-card">
+                    <img src="https://cdn.khadims.com/image/tr:e-sharpen-01,h-700,w-800,cm-pad_resize/data/khadims/06sep2026/51914351950_1.jpg"
+                        class="card-img-top " alt="Product 1">
+                    <div class="card-body  text-center">
+                        <h5 class="card-title"> Pink Sneakers Casual Shoe for Baby Girls
+                        </h5>
+                        <p class="card-text">$99.99</p>
+                        <a href="kartmain.html" class="btn btn-dark">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <section>
+        <div class="text-center">
+            <h3> JUST ARRIVED</h3>
+        </div>
+        <div class="container- my-5">
+            <div class="row">
+                <!-- Product 1 -->
+
+                <div class="col-md-1"></div>
+
+                <div class="col-md-3 images-1 animation-1">
+                    <div class="card product-card">
+                        <img src="https://www.skechers.in/on/demandware.static/-/Sites-skechers_india/default/dw751365c4/images/large/197627209647-1.jpg"
+                            class="card-img-top" alt="Product 1">
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-center">Infinite Heart Light - Color
+                            </h5>
+                            <p class="card-text text-center">$100.9</p>
+                            <a href="kartmain.html" class="btn btn-dark ">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+
+
+                <!-- Product 2 -->
+                <div class="col-md-3 images-1 animation-1">
+                    <div class="card product-card">
+                        <img src="https://www.skechers.in/on/demandware.static/-/Sites-skechers_india/default/dw3626b3d4/images/large/196642951043-5.jpg"
+                            class="card-img-top  " alt="Product 1">
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-center">Court High - Glitter Mix</h5>
+                            <p class="card-text text-center">$100.9</p>
+                            <a href="kartmain.html" class="btn btn-dark ">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+                <!-- Product 2 -->
+                <div class="col-md-3 images-1 animation-1">
+                    <div class="card product-card">
+                        <img src="https://cdn.pixelspray.io/v2/black-bread-289bfa/XUefL6/wrkr/t.resize(h:600,w:600)/data/mothercare/14Oct2021/410258622001-1.JPG"
+                            class="card-img-top  " alt="Product 1">
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-center">Boys Pram Shoes T-Bar - Navy</h5>
+                            <p class="card-text text-center">$100.9</p>
+                            <a href="kartmain.html" class="btn btn-dark ">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="container mt-5 ">
+        <div>
+            <div>
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://starkidz.co.in/cdn/shop/files/star_kidz_banner_16_nov.png?v=1731928708&width=1465"
+                                class="d-block w-100" alt="image1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://static.vecteezy.com/system/resources/previews/020/903/143/non_2x/shoe-sale-banner-vector.jpg"
+                                class="d-block w-100" alt="image2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.footgear.co.za/wp-content/uploads/2024/12/R100-OFF-Kids-FTW-Web-Banner.jpg"
+                                class="d-block w-100" alt="image3">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+    </section>
+
+    <!--  -->
+    <footer>
+        <div class="footer">
+        <div class="row">
+            <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a>
+            <a href="https://www.youtube.com/"><i class="fa fa-twitter"></i></a>
+                  </div>
+        
+        <div class="row">
+        <ul>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#">Our Services</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">Career</a></li>
+        </ul>
+        </div>
+        
+        <div class="row">
+            cloudFOOT Copyright © 2021 cloudFOOT - All rights reserved || 
+        </div>
+        </div>
+        </footer>
+
+</body>
+
+</html>

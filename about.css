@@ -1,0 +1,370 @@
+/* General Styles */
+body {
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Empowering Section */
+.empowering-heading h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.empowering-hero-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 20px;
+}
+
+.empowering-left,
+.empowering-right {
+    flex: 1 1 100%;
+    max-width: 50%;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 30px;
+    letter-spacing: 1.4px;
+}
+
+.btn1 {
+    margin-top: 20px;
+}
+
+/* Reviews Section */
+#reviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 50px 20px;
+    gap: 20px;
+}
+
+.review {
+    flex: 1 1 100%;
+    max-width: 30%;
+    text-align: center;
+}
+
+/* Buttons */
+button {
+    height: auto;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 11px;
+    border: none;
+    background-color: darkblue;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: black;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .empowering-hero-section {
+        flex-direction: column;
+    }
+
+    .empowering-left img {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    #reviews {
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    .review {
+        max-width: 100%;
+    }
+
+    button {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+/* value-section */
+#story{
+    background-color:#fcf9f3;
+    padding: 100px 0px 100px 0px;
+    margin: 0px 0px 0px 0px;
+}
+.story-heading h1{
+    text-align: center;
+    font-size: 30px;
+    font-family: Manrope;
+}
+.para p{
+    text-align: center;
+    justify-content: space-around;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Manrope;
+}
+.btn4{
+    text-align: center;
+    font-family: Manrope;
+}
+.btn4 button{
+    height: 41px;
+    width: 137px;
+    font-family: Manrope;
+}
+#traffic{
+    background-color: #ebe5dbd2;
+    padding: 80px 0px 80px 0px;
+    margin: 0px 0px 0px 0px;
+    display: flex;
+    
+}
+.left-traffic img{
+    width: 502px;
+    height: 447px;
+    margin-left: 120px;
+}
+.right-traffic{
+    margin-left: 265px;
+    margin-top: 103px;
+    font-family: Manrope;
+}
+.right-traffic p{
+    font-size: 20px;
+}
+@media (max-width: 768px) {
+    #traffic {
+        flex-direction: column; /* Stack items vertically */
+        text-align: center; /* Center-align text */
+    }
+
+    .left-traffic img {
+        margin-left: 0; /* Reset margin for smaller screens */
+    }
+
+    .right-traffic {
+        margin: 0 auto; /* Center-align content */
+    }
+}
+/* review section */
+#reviews {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#reviews h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #333;
+    text-align: center; /* Center the text itself */
+    margin: 0 auto; /* Center the heading container horizontally */
+}
+
+
+.review-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-left: 90px;
+}
+
+.review {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center-align content */
+    flex: 0 1 calc(33.33% - 40px); /* Responsive width (3 cards per row) */
+    max-width: 300px; /* Limit the card width */
+}
+.review img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    display: block;
+    margin: 0 auto; /* Center-align image */
+}
+
+.review-text {
+    text-align: center; /* Ensure centered text alignment */
+}
+
+.review h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.review .stars {
+    font-size: 1.2rem;
+    color: #ffcc00; /* Star color */
+    margin-bottom: 10px;
+}
+
+.review p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #555;
+    font-family: Manrope;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 1024px) {
+    .review-container {
+        gap: 30px; /* Reduce gap for smaller screens */
+    }
+
+    .review {
+        flex: 0 1 calc(45% - 20px); /* Two cards per row */
+    }
+}
+
+@media (max-width: 768px) {
+    .review-container {
+        flex-direction: column; /* Stack reviews vertically */
+        align-items: center; /* Center-align cards */
+    }
+
+    .review {
+        flex: 0 1 100%; /* One card per row */
+        margin-bottom: 20px; /* Add spacing between stacked cards */
+    }
+}
+
+@media (max-width: 480px) {
+    #reviews {
+        padding: 40px 10px; /* Reduce padding for smaller screens */
+    }
+
+    #reviews h2 {
+        font-size: 1.5rem; /* Compact heading size */
+    }
+
+    .review img {
+        width: 50px; /* Smaller image size */
+        height: 50px;
+    }
+
+    .review p {
+        font-size: 0.8rem; /* Compact paragraph text */
+    }
+}
+/* Email-section */
+#email-section {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#email-section h5 {
+    text-transform: uppercase;
+    color: #007bff;
+    font-size: 14px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+#email-section h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #222;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input,
+textarea {
+    width: 94%;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+    outline: none;
+}
+
+textarea {
+    resize: none;
+    min-height: 100px;
+}
+
+.btn10 button {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn10 button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.btn10 button:active {
+    background-color: #00408a;
+    transform: translateY(0);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    #email-section {
+        padding: 15px;
+    }
+
+    #email-section h1 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    form {
+        gap: 10px;
+    }
+
+    input,
+    textarea {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .btn10 button {
+        font-size: 14px;
+    }
+}
