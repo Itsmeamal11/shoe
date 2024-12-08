@@ -43,6 +43,7 @@
 <!--GOOGLE FONTS-->
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet"> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js" integrity="sha512-v/wOVTkoU7mXEJC3hXnw9AA6v32qzpknvuUF6J2Lbkasxaxn2nYcl+HGB7fr/kChGfCqubVr1n2sq1UFu3Gh1w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <style>
         body {
             font-family: "Lora", serif;
@@ -104,6 +105,7 @@
             background-size: cover;
             background-position: center;
             height: 100vh;
+            width: 100%;
             /* Full screen height */
             color: white;
             display: flex;
@@ -199,6 +201,9 @@
             <a style="text-decoration: none;" href="kids.html"><li class=" me-2">KIDS</li></a>
             <a style="text-decoration: none;" href="about.html"><li class=" me-2">ABOUT US</li></a>
             <a style="text-decoration: none;" href="kartmain.html"><li><i class="fa-solid fa-cart-shopping"></i></li></a>
+
+
+
             </div>
           <button id="menuicon" class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
               data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
@@ -225,6 +230,15 @@
                       <li class="nav-item">
                           <a class="nav-link text-light" href="kids.html">KIDS</a>
                       </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-light" href="about.html">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-light" href="login.html">LOGIN</a>
+                  </li>
+                 
+                  
+                  
                   </ul>
                   <form class="d-flex mt-3" role="search">
                       <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -266,7 +280,7 @@
                     <img src="https://cdn.khadims.com/image/tr:e-sharpen-01,h-700,w-800,cm-pad_resize/catalog/khadims/product/98713698793/98713698793_1.jpg"
                         class="card-img-top" alt="Product 2">
                     <div class="card-body  text-center">
-                        <h5 class="card-title"> Blue Soft Fabric Baby Booties for Kids - 1-3 yrs</h5>
+                        <h5 class="card-title"> Blue Soft Fabric Baby Booties for Kids </h5>
                         <p class="card-text">$149.99</p>
                         <a href="kartmain.html" class="btn btn-dark">Add to Cart</a>
                     </div>
@@ -303,58 +317,42 @@
     </div>
 
     <section>
-        <div class="text-center">
-            <h3> JUST ARRIVED</h3>
-        </div>
-        <div class="container- my-5">
-            <div class="row">
-                <!-- Product 1 -->
-
-                <div class="col-md-1"></div>
-
-                <div class="col-md-3 images-1 animation-1">
-                    <div class="card product-card">
-                        <img src="https://www.skechers.in/on/demandware.static/-/Sites-skechers_india/default/dw751365c4/images/large/197627209647-1.jpg"
-                            class="card-img-top" alt="Product 1">
-                        <div class="card-body text-center">
-                            <h5 class="card-title text-center">Infinite Heart Light - Color
-                            </h5>
-                            <p class="card-text text-center">$100.9</p>
-                            <a href="kartmain.html" class="btn btn-dark ">Add to Cart</a>
-                        </div>
-                    </div>
+        <div class="container py-5">
+            <h2 class="text-center text-white mb-4">JUST ARRIVED</h2>
+            <div class="row g-4">
+              <div class="col-12 col-sm-6 col-md-4">
+                <div class="card">
+                  <img src="https://s7d4.scene7.com/is/image/WolverineWorldWide/MRLK-ML267360-090822-AW23-000?$dw-m-medium$" class="card-img-top" alt="Infinite Heart Light">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Infinite Heart Light - Color</h5>
+                    <p class="card-text">$100.9</p>
+                    <a href="kartmain.html" class="btn btn-dark">Add to Cart</a>
                 </div>
-                <div class="col-md-1"></div>
-
-
-                <!-- Product 2 -->
-                <div class="col-md-3 images-1 animation-1">
-                    <div class="card product-card">
-                        <img src="https://www.skechers.in/on/demandware.static/-/Sites-skechers_india/default/dw3626b3d4/images/large/196642951043-5.jpg"
-                            class="card-img-top  " alt="Product 1">
-                        <div class="card-body text-center">
-                            <h5 class="card-title text-center">Court High - Glitter Mix</h5>
-                            <p class="card-text text-center">$100.9</p>
-                            <a href="kartmain.html" class="btn btn-dark ">Add to Cart</a>
-                        </div>
-                    </div>
                 </div>
-                <div class="col-md-1"></div>
-                <!-- Product 2 -->
-                <div class="col-md-3 images-1 animation-1">
-                    <div class="card product-card">
-                        <img src="https://cdn.pixelspray.io/v2/black-bread-289bfa/XUefL6/wrkr/t.resize(h:600,w:600)/data/mothercare/14Oct2021/410258622001-1.JPG"
-                            class="card-img-top  " alt="Product 1">
-                        <div class="card-body text-center">
-                            <h5 class="card-title text-center">Boys Pram Shoes T-Bar - Navy</h5>
-                            <p class="card-text text-center">$100.9</p>
-                            <a href="kartmain.html" class="btn btn-dark ">Add to Cart</a>
-                        </div>
-                    </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4">
+                <div class="card">
+                  <img src="https://cdn.media.amplience.net/i/scvl/144762_309869_1?fmt=auto&w=640" class="card-img-top" alt="Court High">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Court High - Glitter Mix</h5>
+                    <p class="card-text">$100.9</p>
+                    <a href="kartmain.html" class="btn btn-dark">Add to Cart</a>
                 </div>
-
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4">
+                <div class="card">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDYJkSz2uFhnhwZuUdI9r5kciXXsssgdgNk6G1v9VC_aYwjDK3Io84o8UDHLBeCxvABzo&usqp=CAU" class="card-img-top" alt="Boys Pram Shoes">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Boys Pram Shoes T-Bar - Navy</h5>
+                    <p class="card-text">$100.9</p>
+                    <a href="kartmain.html" class="btn btn-dark">Add to Cart</a>
+                </div>
+                </div>
+              </div>
             </div>
-        </div>
+          </div>
+          
     </section>
     <section class="container mt-5 ">
         <div>
